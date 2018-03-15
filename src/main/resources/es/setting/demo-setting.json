@@ -1,0 +1,16 @@
+{
+  "index": {
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "ik_max_word"
+        }
+      },
+      "analyzer": {
+        "default_search": {
+          "type": "ik_max_word"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "requestItem": {
+    "dynamic_templates": [
+      {
+        "es_date": {
+          "match": "*Date",
+          "mapping": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+          }
+        }
+      }
+    ],
+    "properties":{
+      "name":{
+        "type": "text",
+        "fields": {
+          "raw": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
